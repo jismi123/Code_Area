@@ -10,7 +10,10 @@ int differenceofSum(int n,int m)
         else 
             sum1=sum1+i;
     }
-    return sum1-sum;
+    if (sum1 > sum)
+        return sum1 - sum;
+    else
+        return sum - sum1;
 }
 int main()
 {
